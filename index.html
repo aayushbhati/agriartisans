@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Agriartisans</title>
+</head>
+
+<body>
+
+        <!--
+  This example requires updating your template:
+
+  ```
+  <html class="h-full bg-gray-100">
+  <body class="h-full">
+  ```
+-->
+  <div class="min-h-full">
+    <nav class="navcolor">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+             
+            </div>
+            <div class="hidden md:block">
+              <div class="ml-10 flex items-baseline space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                  aria-current="page">Home</a>
+                <a href="#xx"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About Us</a>
+                <a href="ourteam.html"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Our Team </a>
+                <a href="helpform.html"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Help</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-4 flex items-center md:ml-6">
+              <button type="button"
+                class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                <span class="small_logo"></span>
+                <span class="sr-only">View notifications</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  aria-hidden="true">
+                  
+                  
+                </svg>
+                <a href="commingsoon.html"><i class="fa-solid fa-language"></i></a>
+              </button>
+
+              <!-- Profile dropdown -->
+              <div class="relative ml-3">
+                <div>
+                  <button type="button"
+                    class="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                    id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-8 w-8 rounded-full"
+                      src="1694331010458.png"
+                      alt="">
+                  </button>
+                </div>
+
+                <!--
+                Dropdown menu, show/hide based on menu state.
+
+                Entering: "transition ease-out duration-100"
+                  From: "transform opacity-0 scale-95"
+                  To: "transform opacity-100 scale-100"
+                Leaving: "transition ease-in duration-75"
+                  From: "transform opacity-100 scale-100"
+                  To: "transform opacity-0 scale-95"
+              -->
+             
+              </div>
+            </div>
+          </div>
+          <div class="-mr-2 flex md:hidden">
+            <!-- Mobile menu button -->
+            <button type="button"
+              class="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!-- Menu open: "hidden", Menu closed: "block" -->
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <!-- Menu open: "block", Menu closed: "hidden" -->
+              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="md:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+            aria-current="page">Home</a>
+          <a href="#xx"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About us</a>
+          <a href="ourteam.html"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Our Team </a>
+          <a href="helpform.html"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Help</a>
+         
+        </div>
+        <div class="border-t border-gray-700 pb-3 pt-4">
+          <div class="flex items-center px-5">
+            <div class="flex-shrink-0">
+              <img class="h-10 w-10 rounded-full"
+                src="1694331010458.png"
+                alt="">
+            </div>
+            <!-- <div class="ml-3">
+              <div class="text-base font-medium leading-none text-white">Tom Cook</div>
+              <div class="text-sm font-medium leading-none text-gray-400">tom@example.com</div>
+            </div> -->
+            <button type="button"
+              class="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">View notifications</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                
+              </svg>
+              <a href="commingsoon.html"><i class="fa-solid fa-language"></i></a>
+
+            </button>
+          </div>
+          <!-- <div class="mt-3 space-y-1 px-2">
+            <a href="#"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Your
+              Profile</a>
+            <a href="#"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Settings</a>
+            <a href="#"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Sign
+              out</a>
+          </div> -->
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-white shadow">
+      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 bg-image">
+        <h1  class="text-3xl font-bold tracking-tight text-gray-900 name">Agriartisans</h1>
+        <div class="logo">
+
+        </div>
+      </div>
+    </header>
+    <main>
+      
+      <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+        <!-- Your content -->
+      </div>
+    </main>
+  </div>
+
+  <div class="place3">
+                            
+  </div>
+  <section class="about-us" style="width: 100%; height: 100%;" id="xx">
+    <div class="about">
+      <img class="logo_animation" src="logo.png" class="pic" />
+      <div class="text">
+        <h2 style="text1">About Us</h2>
+        <h5><span>Agriartisans</span></h5>
+        <p>Creating an integrated agricultural software
+          platform, offering waste management guidance,
+          modern technology adoption resources, real-time
+          crop pricing data, transportation coordination, organic
+          material fertilization support, crop storage
+          management tools, water-efficient techniques, data
+          analytics for decision-making, user-friendly interface,
+          and continuous updates with farmer education and
+          support."</p>
+        <div class="data px-3 py--3">
+          <a href="ourteam.html" class="hire">OUR TEAM</a>
+        </div>
+      </div>
+    </section>
+
+    
+        <div class="timeline">
+          <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+            <div class="timeline__event__icon ">
+              <i class="lni-cake"></i>
+        
+            </div>
+            <div class="timeline__event__date">
+              <img src="wastemanagement.jpg"/>
+            </div>
+            <div class="timeline__event__content ">
+              <div class="timeline__event__title" style="font-size: 1rem;">
+                The Art Of Waste management
+              </div>
+              <div class="timeline__event__description">
+              <a href="section2waste.html">Proper storage of crops is crucial to maintain their quality, prevent spoilage, and maximize their shelf life. The choice of storage technique depends on the type of crop, its moisture content, and the available resources.
+
+              </a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+            <div class="timeline__event__icon">
+              <i class="lni-burger"></i>
+        
+            </div>
+            <div class="timeline__event__date">
+              <img src="bestprice.jpg" alt="">
+            
+            </div>
+            <div class="timeline__event__content">
+              <div class="timeline__event__title" style="font-size: 1rem;">
+                Best pricing
+              </div>
+              <div class="timeline__event__description" style="color: black;">
+                <a href="section2price.html">The best pricing strategy for agricultural farming can vary depending on several factors, including the type of crops or livestock you are producing, market conditions, location, and your long-term goals. 
+
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+            <div class="timeline__event__icon">
+              <i class="lni-slim"></i>
+        
+            </div>
+            <div class="timeline__event__date">
+              <img src="futuretechinnovation.jpg" alt="">
+              
+            </div>
+            <div class="timeline__event__content">
+              <div class="timeline__event__title" style="font-size: 1rem;">
+                Future Tech Innovation
+              </div>
+              <div class="timeline__event__description" >
+                <a href="commingsoon.html">These innovations aim to address various challenges such as increasing food production to feed a growing global population, reducing environmental impact, improving resource efficiency, and making farming more sustainable. </a>
+              </div>
+        
+            </div>
+          </div>
+          <div class="timeline__event animated fadeInUp timeline__event--type1">
+            <div class="timeline__event__icon">
+              <i class="lni-cake"></i>
+        
+            </div>
+            <div class="timeline__event__date">
+              <img src="transportation.jpg" alt="">
+              
+            </div>
+            <div class="timeline__event__content">
+              <div class="timeline__event__title" style="font-size: 1rem;">
+                Progress With transportation
+              </div>
+              <div class="timeline__event__description" style="color: black;">
+                <a href="transports2.html">Transportation plays a crucial role in agricultural farming, as it involves the movement of crops, livestock, equipment, and inputs throughout the farming process. Efficient transportation systems can reduce costs, save time, and contribute to the overall success of agricultural operations. </a>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        <!-- <h2>A clean timeline design, with animated links</h2> -->
+        <div class="timeline">
+          <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+            <div class="timeline__event__icon ">
+              <i class="lni-cake"></i>
+        
+            </div>
+            <div class="timeline__event__date">
+              <img src="ecofriendly.jpg" alt="">
+              
+            </div>
+            <div class="timeline__event__content ">
+              <div class="timeline__event__title">
+               Eco Friendly fertilization
+              </div>
+              <div class="timeline__event__description" style="color: black;">
+                <a href="echofriend.html">Eco-friendly fertilization practices in agriculture farming aim to maximize crop yields while minimizing the negative environmental impacts associated with traditional fertilization methods. These methods focus on sustainable nutrient management, reduced chemical inputs, and improved soil health</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+            <div class="timeline__event__icon">
+              <i class="lni-burger"></i>
+        
+            </div>
+            <div class="timeline__event__date">
+              <img src="unlockingstoragepoyential.jpg" alt="">
+            </div>
+            <div class="timeline__event__content">
+              <div class="timeline__event__title" style="font-size: 1rem;">
+                Unlocking Storage Potential 
+              
+              </div>
+              <div class="timeline__event__description" style="color: black;">
+                <a href="storages3.html">
+                  Unlocking storage potential in agriculture farming is crucial for preserving the quality and value of harvested crops, reducing post-harvest losses, and ensuring a consistent supply to markets. Effective storage practices help farmers manage seasonal variations, fluctuations in demand, and price volatility.</a>
+                  
+              </div>
+            </div>
+          </div>
+          <!-- <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+            <div class="timeline__event__icon">
+              <i class="lni-slim"></i>
+        
+            </div>
+            <div class="timeline__event__date">
+              20-08-2019
+            </div>
+            <div class="timeline__event__content">
+              <div class="timeline__event__title">
+                Exercise
+              </div>
+              <div class="timeline__event__description">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
+              </div>
+        
+            </div>
+          </div>
+          <div class="timeline__event animated fadeInUp timeline__event--type1">
+            <div class="timeline__event__icon">
+              <i class="lni-cake"></i>
+        
+            </div>
+            <div class="timeline__event__date">
+              20-08-2019
+            </div>
+            <div class="timeline__event__content">
+              <div class="timeline__event__title">
+                Birthday
+              </div>
+              <div class="timeline__event__description">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
+              </div>
+            </div>
+          </div> -->
+        
+        </div>
+      
+       
+
+</body>
+
+
+</html>
